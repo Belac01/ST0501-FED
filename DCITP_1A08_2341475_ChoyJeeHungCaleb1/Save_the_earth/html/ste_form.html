@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--   
+    Assignment Theme: Save the Earth (ste)
+    CA2 assignment
+    Save the Earth Form Page
+    Author: Caleb
+    Date: 25/07/2023
+    Filename: ste_form.html
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <script src="../javascript/ste_formhiddentext.js" defer></script>
+    <script src="../javascript/ste_timedate.js" defer></script>
+    <script src="../javascript/ste_countdownEarthday.js" defer></script>
+    <script src="../javascript/ste_countdown2030.js" defer></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-3 bg-light text-black border text-center">
+        <h1>SAVE THE EARTH</h1>
+    </div>
+
+    <!-- Timers in javascipt -->
+    <div class="span bg-success text-warning border border-3 border-info">
+        <!-- Local time and date for the user is displayed -->
+        <div id="dateTimeDisplay"  class="text-center"></div>
+    
+        <!-- Countdown clock for the next Earth day which will loop every time the day has passed -->
+        <div id="earthDayCountdown" class="text-center"></div>
+    
+        <!-- Countdown clock for the year 2030 since it is called Singapore Green Plan 2030 -->
+        <div id="year2030Countdown" class="text-center"></div>
+    </div>
+
+    <!-- Naviagation bar to go to each page -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../ste_index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/ste_goals.html">Goals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/ste_achievements.html">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../html/ste_form.html">Form page</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-sm-12 bg-light border border-2 p-1 text-center">
+                <h2>Feedback form</h2>
+            </div>
+
+            <div class="col-sm-12 bg-warning border text-center">        
+                <p>
+            After reading through my website, please take a few minutes of your time to fill in this feedback form. You can provide any feedback or questions that you may have and I would get back to you as soon as possible. This feedback is crucial in leting me know the areas of my website that is currently lacking so I am able to edit it for future users. Thank you for your time.
+                </p>
+            </div>
+        </div>
+    </div>    
+
+    <!-- The container-fluid class creates a full-width container that spans the entire width of the viewport on all screen sizes.The mt-3 class is used for adding vertical margin (spacing) to an element. The "mt" stands for "margin-top," and the number "3" represents the size of the margin -->
+    <div class="container-fluid mt-3">
+        <form id="myForm" class="was-validated">
+            <h4>Personal details</h4>
+                <!-- Stacked form for name and email-->
+                <!-- "mb" stands for "margin-bottom," and the number "3" represents the size of the margin -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <!-- Radio button for gender-->
+                <label for="name" class="form-label">Gender</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radiomale" name="optradiogender" value="option1" required>
+                    <label class="form-check-label" for="radiomale">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radiofemale" name="optradiogender" value="option2" required>
+                    <label class="form-check-label" for="radiofemale">Female</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radioothers" name="optradiogender" value="option3" required>
+                    <label class="form-check-label" for="radioothers">Others</label>
+                </div>
+
+                <!-- Radio button for age-->
+                <label for="name" class="form-label">Age group</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radioagea" name="optradioage" value="option1" required>
+                    <label class="form-check-label" for="radioagea">Under 18</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radioageb" name="optradioage" value="option2" required>
+                    <label class="form-check-label" for="radioageb">18-25</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radioagec" name="optradioage" value="option3" required>
+                    <label class="form-check-label" for="radioagec">25-45</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radioaged" name="optradioage" value="option4" required>
+                    <label class="form-check-label" for="radioaged">45 or more</label>
+                </div>
+                <br>
+
+            <h4>Website feedback</h4>    
+                <!-- Custom range for the website-->
+                <div class="form-group">
+                    <label for="satisfactionRange">How satisfied are you with this site?</label>
+                    <input type="range" class="form-range" id="satisfactionRange" min="1" max="10" step="1">
+                </div>
+                <div class="form-row">
+                    <div class="col-6 text-start">1 (Least Satisfied)</div>
+                    <div class="col-12 text-end">10 (Most Satisfied)</div>
+                </div>
+
+
+                <!-- Table with radio buttons to rating of the content provided -->
+                <p>Rate each page based on how much you liked it:</p>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>Pages</th>
+                        <th>Star 1</th>
+                        <th>Star 2</th>
+                        <th>Star 3</th>
+                        <th>Star 4</th>
+                        <th>Star 5</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>About Me page</td>
+                            <td><input type="radio" name="page1" value="1" required></td>
+                            <td><input type="radio" name="page1" value="2"></td>
+                            <td><input type="radio" name="page1" value="3"></td>
+                            <td><input type="radio" name="page1" value="4"></td>
+                            <td><input type="radio" name="page1" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Goals page</td>
+                            <td><input type="radio" name="page2" value="1" required></td>
+                            <td><input type="radio" name="page2" value="2"></td>
+                            <td><input type="radio" name="page2" value="3"></td>
+                            <td><input type="radio" name="page2" value="4"></td>
+                            <td><input type="radio" name="page2" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Achievements page</td>
+                            <td><input type="radio" name="page3" value="1" required></td>
+                            <td><input type="radio" name="page3" value="2"></td>
+                            <td><input type="radio" name="page3" value="3"></td>
+                            <td><input type="radio" name="page3" value="4"></td>
+                            <td><input type="radio" name="page3" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Form page</td>
+                            <td><input type="radio" name="page4" value="1" required></td>
+                            <td><input type="radio" name="page4" value="2"></td>
+                            <td><input type="radio" name="page4" value="3"></td>
+                            <td><input type="radio" name="page4" value="4"></td>
+                            <td><input type="radio" name="page4" value="5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+                <br>
+            <!-- Select menu -->
+            <h4>Your opinions</h4>
+            <label for="sel1" class="form-label">Did this website make you change your mind on sustainability for the future?</label>
+            <select class="form-select" id="sel1" name="sellist1">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <br>
+            <!-- Checkbox -->
+            <div class="form-group">
+                <label class="form-check-label">How did you come across this website? (Check any that apply)</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                    <label class="form-check-label" for="check1">Friends</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                    <label class="form-check-label" for="check2">Relatives</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something">
+                    <label class="form-check-label" for="check3">Web search engine</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check4" name="option4" value="something">
+                    <label class="form-check-label" for="check4">Email</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check5" name="option5" value="something">
+                    <label class="form-check-label" for="check5">Others</label>
+                </div>
+                <!-- JAVASCRIPT Hidden text box that will remain hidden till the user clicks on option 5 others -->
+                <div class="form-group" id="textboxContainer" style="display:none;">
+                    <label for="otherText">Enter your answer:</label>
+                    <input type="text" class="form-control" id="otherText" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+            
+                <br>
+                <!-- Floating labels for textbox -->
+                <div class="form-floating">
+                    <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                    <label for="comment">Additional feedback or questions</label>
+                </div>      
+            
+                <br>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                    <label class="form-check-label" for="myCheck">I agree to contribute to sustainaility in the future.</label>
+                <div class="valid-feedback">Good. Sustainability for the environment begins with you. </div>
+                <div class="invalid-feedback">Think about it again then check this checkbox to continue.</div>
+                </div>
+              
+            <button type="submit" class="btn btn-primary m-3">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer bg-secondary text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <h5>Contact me</h5>
+                        <p>Mail to me at : </p>
+                        <p><a href="mailto:calebchoy23@ichat.sp.edu.sg">calebchoy23@ichat.sp.edu.sg</a></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h5>School Address</h5>
+                        <p><address>
+                        Singapore Polytechnic<br>
+                        500 Dover Road<br>
+                        Singapore 139651<br>
+                        </address>
+                </div>
+                <div class="col-sm-12 bg-warning text-center">
+                    <p>We do not inherit the Earth from our ancestors; we borrow it from our children. Be part of the solution now.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

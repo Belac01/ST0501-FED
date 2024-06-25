@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   
+    Assignment Theme: Save the Earth (ste)
+    CA2 assignment
+    Save the Earth Achievements Page
+    Author: Caleb
+    Date: 03/07/2023
+    Filename: ste_achievements.html
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Achievements</title>
+    <script src="../javascript/ste_hiddentext.js" defer></script>
+    <script src="../javascript/ste_timedate.js" defer></script>
+    <script src="../javascript/ste_countdownEarthday.js" defer></script>
+    <script src="../javascript/ste_countdown2030.js" defer></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-3 bg-light text-black border text-center">
+        <h1>SAVE THE EARTH</h1>
+    </div>
+
+    <!-- Timers in javascipt -->
+    <div class="span bg-success text-warning border border-3 border-info">
+        <!-- Local time and date for the user is displayed -->
+        <div id="dateTimeDisplay"  class="text-center"></div>
+    
+        <!-- Countdown clock for the next Earth day which will loop every time the day has passed -->
+        <div id="earthDayCountdown" class="text-center"></div>
+    
+        <!-- Countdown clock for the year 2030 since it is called Singapore Green Plan 2030 -->
+        <div id="year2030Countdown" class="text-center"></div>
+    </div>
+
+    <!-- Naviagation bar to go to each page -->
+    <nav class="navbar navbar-expand-sm bg-secondary justify-content-center navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../ste_index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/ste_goals.html">Goals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../html/ste_achievements.html">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/ste_form.html">Form page</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+        <!-- What SP has commited or pledged -->
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-sm-12 bg-light border border-2 p-1 text-center">
+                <h2>SP Environmental Policy</h2>
+            </div>
+
+        <div class="col-sm-12 bg-warning border text-center">        
+        <p>
+            Singapore Polytechnic is commited to caring for the environement by going green and educating the importance of
+            environmental sustainability. SP is commited to ensuring that pollution is controled through the 3Rs, Reduce Reuse Recycle,
+            and has always complied with the goverment's environmental legislation and requirments. 
+        </p>
+        </div>
+
+    <!-- SP improving recyling of solar panels and increasing R&D of solar panels for cleaner electricity which is good for environmental
+    sustainability due to the reduction of carbon emissions -->
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-light border text-center">
+            <h2 class="row bg-info border border-3 p-3 d-flex align-items-center justify-content-center">Singapore's first ever solar photovoltaics recycling line</h2>
+                <p>
+                    The recycling line takes apart solar panels, removing the important parts such as materials like silver and glass to
+                    be recycled for other uses. It boasts a recycling capacity of 80 panels a day and that about 95% of the solar panel
+                    can be reobtained.
+                </p>
+                <p>
+                    SP has also set up 2 labs, SP-Sembcorp Solar PV Research Lab and SP-CHINT Smart Electrical Power Training Laboratory,
+                    that would greatly increase the amount of research and development done on solar energy.
+                </p>
+                <!-- Image -->
+                <figure class="figure">
+                    <a href="https://www.sp.edu.sg/sp/news/sp/singapore-poly-launches-country%27s-first-ever-solar-photovoltaics-recycling-line">
+                        <img src="../graphics/Pv-recycling-line.jpg" class="figure-img img-fluid" alt="pvline" width="400" height="400">
+                    </a>
+                    <figcaption class="figure-caption">Presentation of the recycling line</figcaption>
+                </figure>
+        </div>
+
+        <!-- Description of sustainable energy development which promotes sustainabilty -->
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-light border text-center">
+            <h2 class="row bg-info border border-3 p-3 d-flex align-items-center justify-content-center">Collaboration with Sembcorp and Chint</h2>
+            <P>
+                SP has teamed up with Sembcorp and Sembcorp and Chint to innovate sustainable energy solutions and build a talent
+                pipeline for the green energy and photovoltaics industry in Asia. They anounced initiatives to hasten the adoptation
+                of renewable and smart energy in Singapore such as launching Singapore's first every solar photovoltaics recycling line,
+                deepening Singapore's solar and smart energy knowledge, positioning Singapore as a regional hub for Sustainable
+                energy solutions.
+            </P>    
+            <!-- Image -->
+            <figure class="figure">
+                <a href="https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-collaborates-with-sembcorp-and-chint-to-fast-track-sustainable-energy-development-in-asia">
+                    <img src="../graphics/CollaborationSP.jpg" class="figure-img img-fluid" alt="collaborate" width="400" height="400" >
+                </a>
+                <figcaption>Partnership between 3 organizations to develop sustainable energy</figcaption>
+            </figure>
+            
+                <!-- Embedded YouTube Video -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xKubVA7kRjk" allowfullscreen></iframe>
+                </div>
+            
+        </div>
+
+        <!-- Description of ESEEC which promotes sustainabilty -->
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-light border text-center">
+            <h2 class="row bg-info border border-3 p-3 d-flex align-items-center justify-content-center">The creation and usage of the ESEEC</h2>
+            <P>
+                SP has established a new <abbr id="Eseec" title="Enviromental Sustainbility and Energy Efficiency Centre"> ESEEC</abbr>, to work with SMEs. The aim of this
+                centre is to help with carbon management through the sharing of knowledge and resources. The centre acts as a all in one hub
+                that helps companies to build a strong digital capabilities thorugh a range of approaches for the mindsets, skillsets and 
+                behaviors.
+            </P>
+            <p>
+                There are initiatives that help to provide real world learning such as indsutry attachements, consultancy projects,
+                and the provision of intensive leadership and senior management programme for businesses that are growing or have the 
+                potential to grow. All of which would help with the improvement and change SMEs for the better.               
+            </p>
+
+        <!-- Images related to the ESEEC -->
+        <figure class="figure">	  
+            <a href="https://www.sp.edu.sg/industry/esee">
+                <img src="../graphics/ESEEC_news.png" class="figure-img img-fluid" alt="news" width="400" height="400" >
+            </a>
+            <figcaption class="figure-caption">ESEEC news</figcaption>  
+        </figure>
+        <figure class="figure">
+            <a href="https://www.sp.edu.sg/industry/esee">
+                <img src="../graphics/ESEEC_work.jpg" class="figure-img img-fluid" alt="work" width="400" height="400" >
+            </a>
+            <figcaption class="figure-caption">ESEEC work</figcaption>
+        </figure>
+        
+            <!-- Embedded YouTube Video -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rNU8c-fVdSA" allowfullscreen></iframe>
+            </div>
+        
+        </div>
+
+        <!-- Description of recyling plastic waste -->
+        <div class="col-sm-12 bg-light border text-center">
+            <h2 class="row bg-info border border-3 p-1 justify-content-center">Recycling plastics into asphalt</h2>
+            <P>
+                A local construction company, Samwoh, has partnered with SP to utilise plastic waste in asphalt, which is material used
+                to build more durable roads surfaces. Through the recycling of plastic waste, the plastic pollution in the environment
+                can be reduced.
+            </P>
+            <p>
+                Through this partnership and collaboration, it has been found that asphalt made with plastic waste could last at least
+                20 percent longer than regular asphalt and it had levels of chemicals used that were within the offical guidelines.
+                This is a huge step in the recycling industry as plastic is not easily recycled due to its undecoposing state.
+            </p>
+                <!-- Image -->
+                <figure class="figure">
+                    <a href="https://www.sp.edu.sg/sp/news/sp/the-road-to-recycling-could-well-be-paved-with-plastic-waste">
+                        <img src="../graphics/st-recycling.jpg" alt="plastic" class="figure-img img-fluid" width="600" height="600" >
+                    </a>
+                <figcaption class="figure-caption">Article of plastic recyling by SP</figcaption>
+                </figure>
+        </div>
+
+    <!-- Additional ways that SP has helped with environmental sustainability -->
+        <div class="col-sm-12 bg-light border text-center">
+            <h2 class="row bg-info border border-3 p-1 justify-content-center">Additional ways:</h2>
+                <!-- Image -->
+                <figure id="additionalways">
+                    <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters">
+                <img src="../graphics/SP_Pledges.png" alt="Pledges to progress" class="figure-img img-fluid" width="600" height="600" >
+                    </a>
+                <figcaption>
+                    A look at how SP is a green school
+                </figcaption>
+                </figure>
+        </div>
+
+        <!-- JAVASCRIPT Button that opens/hides additional information -->
+        <div class="container-fluid w-100">
+            <div class="row">
+                <div class="col-sm-12 border">
+                    <h2 class="row bg-info border border-end-0 border-2 p-2 justify-content-center">Find out more</h2>
+                        <div class="d-flex justify-content-center p-3"> <!-- Add d-flex and justify-content-center -->
+                            <button id="toggleButton">Show/Hide Content</button>
+                        </div>
+                    <div id="hiddenContent" style="display: none;">
+                        <div class="container-fluid row text-center p-3">
+                            <div class="col-sm-12 col-md-6 col-lg-6 p-3"> <!-- Use col classes for responsiveness -->
+                                <h4>SP website</h4>
+                                <a href="https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters" class="btn btn-danger">Visit</a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 p-3"> <!-- Use col classes for responsiveness -->
+                                <h4>SDG website</h4>
+                                <a href="https://sdgs.un.org/goals" class="btn btn-danger">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+    <!-- Simple button that brings user back to the top of the screen -->
+    <a href="../html/ste_achievements.html" class="btn btn-primary btn-outline-info span d-grid">Back to the top</a>
+
+    <footer class="span footer bg-secondary text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <h5>Contact me</h5>
+                        <p>Mail to me at : </p>
+                        <p><a href="mailto:calebchoy23@ichat.sp.edu.sg">calebchoy23@ichat.sp.edu.sg</a></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h5>School Address</h5>
+                        <p><address>
+                        Singapore Polytechnic<br>
+                        500 Dover Road<br>
+                        Singapore 139651<br>
+                        </address>
+                </div>
+                <div class="col-sm-12 bg-warning text-center">
+                    <p>We do not inherit the Earth from our ancestors; we borrow it from our children. Be part of the solution now.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- Sources of Information:
+About SP environmental policy: https://www.sp.edu.sg/sp/about-sp/corporate-information/quality-environmental-policy
+About ESEEC: https://www.sp.edu.sg/industry/esee
+About SP sustainability matters: https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters
+About solar recyling line: https://www.sp.edu.sg/sp/news/sp/singapore-poly-launches-country%27s-first-ever-solar-photovoltaics-recycling-line
+About sustainable energy development in ASIA: https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-collaborates-with-sembcorp-and-chint-to-fast-track-sustainable-energy-development-in-asia
+About plastic waste in roads: https://www.sp.edu.sg/sp/news/sp/the-road-to-recycling-could-well-be-paved-with-plastic-waste
+About PV for sustainable energy source: https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-collaborates-with-sembcorp-and-chint-to-fast-track-sustainable-energy-development-in-asia
+-->
+<!-- Image sources:
+Img: ESEEC news-https://www.sp.edu.sg/sp/news/sp/sp-establishes-environmental-sustainability-and-energy-efficiency-centre-to-help-smes-with-carbon-management
+Img: ESEEC work-https://www.sp.edu.sg/industry/esee
+Img: PVline: https://www.sp.edu.sg/sp/news/sp/singapore-polytechnic-collaborates-with-sembcorp-and-chint-to-fast-track-sustainable-energy-development-in-asia
+Img: Plastic: https://www.sp.edu.sg/sp/news/sp/the-road-to-recycling-could-well-be-paved-with-plastic-waste
+Img: Additionalways: https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters
+ -->

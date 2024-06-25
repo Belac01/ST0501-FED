@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* 
+    Assignment Theme: Save the Earth (ste)
+    CA1 assignment
+    Save the Earth About Page
+    Author: Caleb
+    Date: 05/01/2023
+    Filename: ste_visual.css
+*/
+
+/* HTML Styles */
+html {
+    background-image: url(../graphics/Earth.jpg);
+}
+
+/* Page body styles */
+body {
+    border-left: 1px solid gold;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    box-shadow: rgb(51, 51, 51) 15px 0px 25px,
+    rgb(51, 51, 51)-15px 0px 25px;
+}
+
+
+/* Figure and image styles */
+figure#additionalways {
+    margin: 20px auto 0px;
+    width: 80%;
+    border: 10px solid;
+    border-radius: 25px;
+    color: gray;
+}
+
+figure#additionalways img{
+    display: block;
+    width: 100%;
+}
+
+figure#additionalways figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype','Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+figure#news {
+    margin: 20px auto 0px;
+    width: 40%;
+    border: 5px solid gray;
+}
+
+figure#news img{
+    display: block;
+    width: 100%;
+}
+
+figure#news figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype','Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+figure#work {
+    margin: 20px auto 50px;
+    max-width: 30%;
+    border: 5px solid gray;
+}
+
+figure#work img{
+    display: block;
+    width: 100%;
+
+}
+
+figure#work figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype','Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+figure#plastic {
+    margin: 20px auto 20px;
+    max-width: 90%;
+    max-height: 90%;
+    border: 10px solid gray;
+    border-radius: 25px;
+}
+
+figure#plastic img{
+    display: block;
+    width: 100%;
+
+}
+
+figure#plastic figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype','Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+figure#recycling {
+    margin: 20px auto 20px;
+    max-width: 30%;
+    max-height: 30%;
+    border: 10px solid gray;
+    border-radius: 25px;
+}
+figure#recycling{
+    float: left;
+}
+
+article#recyclingline > p {
+    float: right;
+    width: 50%;
+    margin-right: 150px;
+    border: 1px solid red;
+}
+article#collaborate {
+    clear: both;
+}
+
+
+figure#recycling img{
+    display: block;
+    width: 100%;
+}
+
+figure#recycling figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype','Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+figure#collaborate {
+    margin: 20px auto 20px;
+    max-width: 30%;
+    max-height: 30%;
+    border: 10px solid gray;
+    border-radius: 25px;
+}
+
+figure#collaborate img{
+    display: block;
+    width: 100%;
+
+}
+
+figure#collaborate figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype','Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+div#achievementimg {
+    perspective: 600px;
+}
+
+
+
+/* Figure transformation */
+figure#work {
+    transform: rotateX(30deg) translateZ(50px);
+    box-shadow: rgb(51, 51, 51) 0px 10px 25px;
+}
+
+img#collaboration {
+    float: right;
+    margin: 20px auto 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Sources:
+Earth.jpg: https://pixabay.com/illustrations/earth-space-sunlight-sun-rays-1756274/
+
+
+
+
+
+
+
+
+
+
+
+
+*/

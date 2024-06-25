@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* 
+    Assignment Theme: Save the Earth (ste)
+    CA1 assignment
+    Save the Earth About Page
+    Author: Caleb
+    Date: 05/01/2023
+    Filename: ste_layout.css
+*/
+
+/* Header styles */
+header h1 {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 30px;
+    background-image: url(../graphics/Tree.jpg);
+    color: yellow;
+    font-size: 30px;
+}
+
+
+
+/* Heading styles */
+body h1 {
+    color: white;
+    background-color: rgb(236, 177, 131);
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px gray;
+    border: 1px solid black;
+}
+
+h2, h3 {
+    color: white;
+    background-color: rgb(236, 177, 131);
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px gray;
+    border: 1px solid black;
+}
+
+/* Body styles */
+body {
+    max-width: 1080px;
+    min-width: 640px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cornsilk;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+}
+ section#vision {
+    clear:both;
+ }
+
+/* Navigation styles */
+nav.horizontalNavigation > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 2px solid gray;
+}
+
+nav.horizontalNavigation > ul > li {
+    float: left;
+    border-right: 2px solid gray;
+    width: 33.33%;
+}
+
+nav.horizontalNavigation > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav.horizontalNavigation > ul > li a:hover {
+    color: white;
+    background-color: black;
+}
+
+nav.horizontalNavigation > ul > li a.active {
+    background-color: darkgray;
+  }
+
+nav.horizontalNavigation > ul > li:last-child {
+    border-right: none;
+}  
+
+/* Text-styles */
+abbr#Eseec {
+    text-decoration: underline;
+    font-weight: bold;
+    color: aquamarine;
+}
+
+a#mailme {
+    font-weight: bold;
+    color:darkblue;
+    text-decoration: underline;
+}
+
+p#mail, p#schlocation {
+    font-weight: bolder;
+}
+
+address#sch {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+/* Footer styles */
+footer {
+	background-color: green;
+	color: white;	
+	display: block;
+	padding: 25px;
+    text-align: center;
+    background: linear-gradient(345deg, rgb(172, 232, 172), rgb(21, 35, 21) 80%);
+}

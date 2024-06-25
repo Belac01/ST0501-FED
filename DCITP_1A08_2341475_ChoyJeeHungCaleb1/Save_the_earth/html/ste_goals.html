@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   
+    Assignment Theme: Save the Earth (ste)
+    CA2 assignment
+    Save the Earth Goals Page
+    Author: Caleb
+    Date: 03/07/2023
+    Filename: ste_goals.html
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Goals and objectives</title>
+    <script src="../javascript/ste_timedate.js" defer></script>
+    <script src="../javascript/ste_countdownEarthday.js" defer></script>
+    <script src="../javascript/ste_countdown2030.js" defer></script>
+    <script src="../javascript/ste_sustainability_tips.js" defer></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-3 bg-light text-black border text-center">
+        <h1>SAVE THE EARTH</h1>
+    </div>
+    
+    <!-- Timers in javascipt -->
+    <div class="span bg-success text-warning border border-3 border-info">
+        <!-- Local time and date for the user is displayed -->
+        <div id="dateTimeDisplay"  class="text-center"></div>
+    
+        <!-- Countdown clock for the next Earth day which will loop every time the day has passed -->
+        <div id="earthDayCountdown" class="text-center"></div>
+    
+        <!-- Countdown clock for the year 2030 since it is called Singapore Green Plan 2030 -->
+        <div id="year2030Countdown" class="text-center"></div>
+    </div>
+
+    <!-- Naviagation bar to go to each page -->
+    <nav class="navbar navbar-expand-sm bg-secondary justify-content-center navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="../ste_index.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="../html/ste_goals.html">Goals</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../html/ste_achievements.html">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/ste_form.html">Form page</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-sm-12 bg-light border border-2 p-2 text-center">
+        <h1>Goals and objectives</h1>
+            </div>
+
+            <div class="col-sm-12 bg-warning border p-3 text-center">
+             <p>
+                In order to achieve a sustainable future, we must all do our part in cutting down on waste and our global carbon footprint.
+                We have to make decisions based on long-term consequences instead of always taking the cheapest and easiest solution to
+                our fulfil our needs. There are 17 Sustainable Development Goals (SDG) to end poverty, save the earth and try to improve
+                the standards of living for people worldwide, rich or poor.
+             </p>
+            </div>
+             <!-- 1st goal -->
+            <div class="col-sm-12 col-md-6 col-lg-4 bg-light border">
+            <h2 class="row col-sm-14 border border-end-0 border-2 p-2 justify-content-center">Goal 1: Reducing hunger worldwide</h2>
+                <p>
+                    Hunger and malnutrition is a barrier to a sustainable future. It causes people to be more prone to diseases and become
+                    less productive thus making them not able to have a proper income and livelihood. A world with lesser hunger issues can
+                    improve our economies, health, education, equality and our social development.
+                </p>
+                <!-- List -->
+                <h3>Some examples that we can follow:</h3>
+                     <ul>
+                        <li>Support local markets and make sustainable food choices</li>
+                        <li>Have a good diet that is nutritious and healthy</li>
+                        <li>Fight food waste by not wasting food unneccsarily</li>
+                    </ul>
+            </div>
+
+            <!-- 2nd goal -->
+            <div class="col-sm-12 col-md-6 col-lg-4 border">
+            <h2 class="row col-sm-14 border border-end-0 border-2 p-2 bg-light justify-content-center">Goal 2: Using only clean and affordable energy</h2>
+                <p>
+                    For a long time, our main sources of energy has been through the burning of coal, oil and gas. But did you know that it 
+                    contributes to a large amount of carbon dioxide? This not only affects the environment through climate change, but would
+                    also affect the health and well-being of current and future generations through air pollution. Therefore, the solution 
+                    would be to use clean and renewable energy sources such as solar energy, and cutting down on unneccsary usage of energy.
+                </p>
+                <!-- List -->
+                <h3>Some examples that we can follow:</h3>
+                    <ul>
+                        <li>Turning off devices when not in use</li>
+                        <li>Using energy effcient devices that cuts down on the usage of electricity</li>
+                        <li>Investing and switching to more renewable sources of energy such as solar energy or wind energy</li>
+                    </ul>
+            </div>
+
+            <!-- 3rd goal -->
+            <div class="col-sm-12 col-md-6 col-lg-4 bg-light border">
+            <h2 class="row col-sm-14 border border-2 p-2 justify-content-center">Goal 3: Producing and consuming responsibly</h2>
+                <p>
+                    Economic and social progress that we have made has been followed by environmental problems that could very well be
+                    endangering our future development and survival. There are many aspects that needs to be changed, ranging from food
+                    and product wastage to polltution of the land, water and air that we rely on for survival. 
+                </p>
+                <!-- List -->
+                <h3>Some examples that we can follow:</h3>
+                    <ul>
+                        <li>Reducing your personal waste</li>
+                        <li>Be more aware of what you buy and try to choose the sustainable options</li>
+                        <li>Reduce, Reuse and Recycle more</li>
+                    </ul>
+            </div>
+            <!-- JAVASCRIPT Button that allows users to click and scroll through some sustainablity tips -->
+            <div class="container-fluid p-3 bg-light">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 text-center">
+                    <button id="showSustainabilityTip" class="btn btn-primary">Show Sustainability Tip</button>
+                    <div id="sustainabilityTipDisplay"></div>  
+                    </div>
+                </div>
+            </div>  
+        </div>     
+    </div>
+    
+    <footer class="span footer bg-secondary text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <h5>Contact me</h5>
+                        <p>Mail to me at : </p>
+                        <p><a href="mailto:calebchoy23@ichat.sp.edu.sg">calebchoy23@ichat.sp.edu.sg</a></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h5>School Address</h5>
+                        <p><address>
+                        Singapore Polytechnic<br>
+                        500 Dover Road<br>
+                        Singapore 139651<br>
+                        </address>
+                </div>
+                <div class="col-sm-12 bg-warning text-center">
+                    <p>We do not inherit the Earth from our ancestors; we borrow it from our children. Be part of the solution now.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

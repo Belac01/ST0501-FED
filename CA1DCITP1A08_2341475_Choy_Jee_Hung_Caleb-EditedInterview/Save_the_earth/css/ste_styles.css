@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* 
+    Assignment Theme: Save the Earth (ste)
+    CA1 assignment
+    Save the Earth About Page
+    Author: Caleb
+    Date: 05/01/2023
+    Filename: ste_styles.css
+*/
+
+/* Header styles */
+h1#toptitle {
+    text-shadow: 2px 2px gray;
+}
+
+/* Body styles */
+ul {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Navigation styles */
+div#topbutton {
+    text-align: center;
+    text-decoration: none;
+    color: cyan;
+    font-style: italic;
+}
+
+/* Img Styles */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}  
+.column img{
+    max-width: 100%;
+    border: 10px solid gray;
+    border-radius: 25px;
+}
+
+/* List styles */
+section#hunger > ul {
+    list-style-image: url(../graphics/Food_2_25x25.png);
+}
+
+section#energy > ul {
+    list-style-image: url(../graphics/Lightbulb_25x25.png);
+}
+
+section#recycle > ul {
+    list-style-image: url(../graphics/Recycle_25x25.png);
+}
+
+
+
+
+
+
+/* Sources:
+Tree: https://pixabay.com/photos/environmental-protection-326923/
+Food: https://pixabay.com/vectors/vegetables-fruits-food-artichoke-155616/
+Recyce: https://pixabay.com/vectors/recycling-symbol-logo-green-eco-304974/
+Lightbulb: https://pixabay.com/vectors/bulb-light-lamp-idea-electricity-29050/
+
+*/
